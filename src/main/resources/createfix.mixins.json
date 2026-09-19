@@ -1,0 +1,24 @@
+{
+  "required": true,
+  "package": "com.frostmatrix.createfix.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ContinuousOBBColliderMixin",
+    "MassTrackerMixin",
+    "RepackagerBlockEntityMixin",
+    "BlueprintMenuMixin",
+    "BlueprintCraftSlotMixin",
+    "GhostItemMenuAccessor",
+    "BrewstationBlockEntityMixin",
+    "BlockDropMixin",
+    "SubLevelAssemblyHelperMixin",
+    "TableClothBlockEntityMixin",
+    "ItemDrainBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}
