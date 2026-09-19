@@ -3,13 +3,13 @@ package com.frostmatrix.createfix.mixin;
 import org.joml.Vector3d;
 import org.joml.Vector3dc;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Pseudo;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
-import dev.ryanhcode.sable.api.physics.mass.MassTracker;
-
-@Mixin(value = MassTracker.class, remap = false)
+@Pseudo
+@Mixin(targets = "dev.ryanhcode.sable.api.physics.mass.MassTracker", remap = false)
 public class MassTrackerMixin {
 
     @Inject(method = "getCenterOfMass", at = @At("RETURN"), cancellable = true)

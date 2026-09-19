@@ -1,6 +1,7 @@
 {
   "required": true,
   "package": "com.frostmatrix.createfix.mixin",
+  "plugin": "com.frostmatrix.createfix.CreateFixMixinPlugin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ContinuousOBBColliderMixin",
